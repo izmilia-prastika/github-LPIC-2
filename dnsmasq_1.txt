@@ -1,0 +1,18 @@
+#conf-dir=/etc/dnsmasq.d
+#interface=ens37
+#interface=lo
+#no-resolv
+cache-size=1000
+listen-address=127.0.0.1, 192.168.174.133 #local-interface
+domain-needed
+bogus-priv
+dns-forward-max=100
+port=53
+bind-interfaces
+user=dnsmasq
+group=dnsmasq
+pid-file=/var/run/dnsmasq.pid
+resolv-file=/etc/resolv.dnsmasq
+no-poll
+no-hosts
+#no-dhcp-interface=ens37
